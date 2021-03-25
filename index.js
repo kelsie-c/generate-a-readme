@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -40,7 +41,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'licenses',
             message: 'Which licenses were used for this project?',
-            choices: ['MIT', 'GPLv3', 'GPL', 'Creative Commons'],
+            choices: ['Apache', 'CreativeCommons', 'GNU', 'IBM', 'MIT', 'Mozilla', 'None'],
         },
         {
             type: 'input',
@@ -56,10 +57,20 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(filename, data) {    
+    fs.writeFile(filename, generateMarkdown(data), (err) => {
+        if (err) throw err;
+        console.log('Successfully wrote to README.md');
+      });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    questions()
+        .then((data) => writeToFile('README.md', data))
+        // .then(() => console.log('Successfully wrote to README.md'))
+        .catch((err) => console.error(err));
+};
 
 // Function call to initialize app
 init();
