@@ -1,5 +1,5 @@
-# readme generator
-[![License](https://img.shields.io/badge/License-GNU-blue.svg)](http://opensource.org/licenses/GNU) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)    
+# generate a readme
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -32,7 +32,7 @@ test
 
 ## License
 
-GNU,MIT
+[MIT](https://opensource.org/licenses/MIT)
 
 ## Questions?
 
