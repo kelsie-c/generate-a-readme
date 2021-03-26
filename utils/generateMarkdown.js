@@ -1,5 +1,7 @@
 let licenseArray = [];
+let licenseList = [];
 let listOfBadges = [];
+let allBadges = [];
 let licenseURL;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
@@ -9,7 +11,21 @@ function renderLicenseBadge(licenses) {
   // for each license in the list of licenses
   for (const license of licenses) {
     // declare a new variable and set it equal to the license badge url
-    let licenseBadge = `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`;
+    let searchCrit;
+
+    if (license === 'Apache') {
+      searchCrit = `Apache%202.0-red.svg`;
+    } else if (license === 'GNU') {
+      searchCrit = `GPL%20v3-lightgrey.svg`;
+    } else if (license === 'IBM') {
+      searchCrit = `IPL%201.0-blue.svg`;
+    } else if (license === 'MIT') {
+      searchCrit = `MIT-green.svg`;
+    } else if (license === 'Mozilla') {
+      searchCrit = `MPL%202.0-yellow.svg`;
+    }
+
+    let licenseBadge = `[![License](https://img.shields.io/badge/License-${searchCrit})]`;
     renderLicenseLink(license);
     // add the url to the array 
     listOfBadges.push(licenseBadge + licenseURL);
@@ -21,13 +37,28 @@ function renderLicenseBadge(licenses) {
       listOfBadges = [];
     }
   }
-  return listOfBadges;
+
+  allBadges = listOfBadges.join('   ');
+  return allBadges;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  licenseURL = `(https://opensource.org/licenses/${license})`;
+
+  if (license === 'Apache') {
+    searchLicense = `Apache-2.0`;
+  } else if (license === 'GNU') {
+    searchLicense = `GPL-3.0`;
+  } else if (license === 'IBM') {
+    searchLicense = `IPL-1.0`;
+  } else if (license === 'MIT') {
+    searchLicense = `MIT`;
+  } else if (license === 'Mozilla') {
+    searchLicense = `MPL-2.0`;
+  }
+
+  licenseURL = `(https://opensource.org/licenses/${searchLicense})`;
   return licenseURL;
 }
 
@@ -39,7 +70,10 @@ function renderLicenseSection(licenses) {
     licenseArray.push(`[${license}]${renderLicenseLink(license)}`);
   }
 
-  return licenseArray;
+  licenseList = licenseArray.join(`
+
+`);
+  return licenseList;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -51,7 +85,7 @@ function generateMarkdown(data) {
   renderLicenseSection(licenses);
   
   return `# ${data.title}
-${listOfBadges}
+${allBadges}
 
 ## Description
 
@@ -62,7 +96,7 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [Testing Instructions](#testing)
+- [Testing Instructions](#testing-instructions)
 - [License](#license)
 - [Questions](#questions)
 
@@ -84,7 +118,7 @@ ${data.testInstruct}
 
 ## License
 
-${licenseArray}
+${licenseList}
 
 ## Questions?
 

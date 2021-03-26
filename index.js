@@ -41,7 +41,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'licenses',
             message: 'Which licenses were used for this project?',
-            choices: ['Apache', 'CreativeCommons', 'GPL-3.0', 'IBM', 'MIT', 'Mozilla', 'None'],
+            choices: ['Apache', 'GNU', 'IBM', 'MIT', 'Mozilla', 'None'],
         },
         {
             type: 'input',

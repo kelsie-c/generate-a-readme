@@ -1,5 +1,5 @@
-# generate a readme
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# readme generator
+[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0)   [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -10,7 +10,7 @@ desc
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [Testing Instructions](#testing)
+- [Testing Instructions](#testing-instructions)
 - [License](#license)
 - [Questions](#questions)
 
@@ -31,6 +31,8 @@ guide
 test
 
 ## License
+
+[Apache](https://opensource.org/licenses/Apache-2.0)
 
 [MIT](https://opensource.org/licenses/MIT)
 
