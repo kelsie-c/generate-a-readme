@@ -100,25 +100,39 @@ ${data.description}
 - [License](#license)
 - [Questions](#questions)
 
+---
+
 ## Installation
 
 ${data.installInstruct}
 
+---
+
 ## Usage
 
-${data.usageInfo}
+![Application Walkthrough](./${data.usageInfo})
+
+---
 
 ## Contribution
 
 ${data.contribution}
 
+---
+
 ## Testing Instructions
 
 ${data.testInstruct}
 
+---
+
 ## License
 
+This project is covered under the following license(s):
+
 ${licenseList}
+
+---
 
 ## Questions?
 

@@ -25,7 +25,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'usageInfo',
-            message: 'Please enter all relevant usage information:',
+            message: 'What is the name of your usage media file? Please include file extension.',
         },
         {
             type: 'input',

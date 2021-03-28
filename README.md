@@ -1,9 +1,9 @@
-# readme generator
-[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0)   [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# Generate A README
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-desc
+For this assignment, the task was to create a command-line application that uses Inquirer to collect information from the user, then creates a README file. License badges were required to appear under the title and include links to the relevant license pages.
 
 ## Table of Contents
 
@@ -14,30 +14,42 @@ desc
 - [License](#license)
 - [Questions](#questions)
 
+---
+
 ## Installation
 
-install
+You will need to install Node.js and the Inquirer package to run this program.
+
+---
 
 ## Usage
 
-use
+![Application Walkthrough](./Walkthrough.gif)
+
+---
 
 ## Contribution
 
-guide
+No unsolicited contributions can be made at this time.
+
+---
 
 ## Testing Instructions
 
-test
+There is no testing script currently.
+
+---
 
 ## License
 
-[Apache](https://opensource.org/licenses/Apache-2.0)
+This project is covered under the following license(s):
 
 [MIT](https://opensource.org/licenses/MIT)
+
+---
 
 ## Questions?
 
 [kelsie-c](https://www.github.com/kelsie-c)
 
-Email: kelsie.cummings1107@gmail.com
+Email: 
