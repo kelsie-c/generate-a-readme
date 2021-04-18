@@ -1,0 +1,24 @@
+{
+  "name": "generate-a-readme",
+  "version": "1.0.0",
+  "description": "[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelsie-c/generate-a-readme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelsie-c/generate-a-readme/issues"
+  },
+  "homepage": "https://github.com/kelsie-c/generate-a-readme#readme"
+}
